@@ -1,15 +1,14 @@
 class Main {
-  static void myMethod(String fname) { 
+  static void myMethod(String fname, int personAge) { 
     // the variable being passed is in brackets
-    System.out.println(fname + " Refsnes");
+    System.out.println(fname + " is " + personAge + " years old");
   }
 
   public static void main(String[] args) {
-    myMethod("Liam"); 
-    // Liam is passed and entered into fname of the method
-    myMethod("Jenny");
-    // Liam is passed and entered into fname of the method
-    myMethod("Anja");
-    // Liam is passed and entered into fname of the method
+    String firstName = "Lucas";
+    int age = 17;
+
+    myMethod(firstName, age); 
+    // Lucas is passed and entered into fname of the method
   }
 }
